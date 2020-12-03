@@ -48,3 +48,12 @@ function openWindow(url, isNew = 1)
 	else
 			window.open(url,"_self");
 }
+window.addEventListener("scroll", preventMotion, false);
+window.addEventListener("touchmove", preventMotion, false);
+
+function preventMotion(event)
+{
+    window.scrollTo(0, window.pageYOffset || document.documentElement.scrollTop);
+    event.preventDefault();
+	event.stopPropagation();
+}
