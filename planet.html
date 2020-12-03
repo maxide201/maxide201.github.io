@@ -1,0 +1,33 @@
+<head>
+	<title>Solar system</title>
+	<link rel="stylesheet" type="text/css" href="font/font.css">
+	<link rel="stylesheet" type="text/css" href="styles/planet.css">
+	<script type="text/javascript" src = "scripts/planet.js"></script>
+</head>
+<body>
+	<div id="header_menu">
+		<div class="header_menu_item" onclick="openWindow('index.html', 0)">
+			Home
+		</div>
+		<div class="header_menu_item" onclick="openWindow('moons.html', 0)">
+			Moons
+		</div>
+		<div class="header_menu_item" onclick="openWindow('for_children.html', 0)">
+			For children
+		</div>
+		<div class="header_menu_item" onclick="openWindow('news.html', 0)">
+			News
+		</div>
+	</div>
+
+	<hr color = "#f0f0f0" style="margin: 0">
+	<div id = "top">
+		<h1 id = name_of_planet></h1>
+	</div>
+	<hr color = "#f0f0f0">
+	<img id = "image">
+	<div id = "planet_txt"></div>
+
+	<script type="text/javascript" src="scripts/json/planets_json.js"></script>
+	<script type="text/javascript" src="scripts/create_planet.js"></script>
+</body>

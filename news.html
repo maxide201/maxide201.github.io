@@ -1,0 +1,58 @@
+<head>
+	<title>News</title>
+	<link rel="stylesheet" type="text/css" href="font/font.css">
+	<link rel="stylesheet" type="text/css" href="styles/news.css">
+	<script type="text/javascript" src = "scripts/news.js"></script>
+</head>
+<body bgcolor="black">
+	<a id="upbutton">
+   		<img src="images/up.png" onclick="go('header_menu')">
+	</a>
+
+	<div id="header_menu">
+		<div class="header_menu_item" onclick="openWindow('index.html', 0)">
+			Home
+		</div>
+		<div class="header_menu_item" onclick="openWindow('moons.html', 0)">
+			Moons
+		</div>
+		<div class="header_menu_item" onclick="openWindow('for_children.html', 0)">
+			For children
+		</div>
+		<div class="header_menu_item" onclick="openWindow('news.html', 0)">
+			News
+		</div>
+	</div>
+	<hr color = "#f0f0f0" style="margin: 0">
+	<div id = "top">
+		<h1>NEWS</h1>
+	</div>
+	<hr color = "#f0f0f0">
+
+	<div id = "content_block"></div>
+
+	<hr id = "footer_border" color = "#f0f0f0">
+	<div id="footer">
+		<div id = "copyright">
+				©Soluyanov M.A., 2020
+		</div>
+		<ul id = "footer-ul">
+			<li class="footer-li"><b>Contacts:</b></li>
+			<li class="footer-li">tel: <a href="tel:+7(800)-555-35-35">+7(800)-555-35-35</a></li>
+			<li class="footer-li">instagram: <a href="https://www.instagram.com/maxide201/">@maxide201</a></li>
+			<li class="footer-li">vk: <a href = "https://vk.com/maxide201">https://vk.com/maxide201</a></li>
+		</ul>
+	</div>
+
+	<script type="text/javascript" src = "scripts/json/news_json.js"></script>
+	<script type="text/javascript" src = "scripts/create_news.js"></script>
+</body>
+
+	<!--	<div class = "news"> 													Пример блока новостей
+		<h2>Rocket Lab вернула первую ступень ракеты Electron на Землю</h2>
+		<hr color = '#f0f0f0' width='20%' align='left'>
+		<h3>03.12.20</h3>
+		<br>
+		<img class = "image" src="images/news1.jpg" width="70%">
+		<p>SpaceX — далеко не единственная частная компания, которая занимается отправкой грузов в космос. Этим делом также занята основанная в 2006 году компания Rocket Lab. Она является создателем ракеты-носителя Electron, которая выполняет коммерческие заказы с 2018 года и может выводить на орбиту нашей планеты небольшие грузы весом до 300 килограмм. Недавно компания усовершенствовала свою ракету, сделав ее первую ступень многоразовой — после первого использования ее можно будет задействовать еще несколько раз. Утром 20 ноября компания запустила ракету Electron и успешно вернула ее первую ступень обратно на Землю. Приземление ступени прошло успешно — на опубликованной главой компании Rocket Lab Питером Беком (Peter Beck) фотографии не видно никаких серьезных повреждений. Важно отметить, что ступень приземлилась благодаря парашюту. </p>
+	</div>	-->

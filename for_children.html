@@ -1,0 +1,52 @@
+<head>
+	<title>For children</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="font/font.css">
+	<link rel="stylesheet" type="text/css" href="styles/for_children.css">
+	<script type="text/javascript" src = "scripts/json/ch_planets_json.js"></script>
+	<script type="text/javascript" src = "scripts/for_children.js"></script>
+</head>
+
+<body>
+	<div id="header_menu">
+		<div class="header_menu_item" onclick="openWindow('index.html', 0)">
+			Home
+		</div>
+		<div class="header_menu_item" onclick="openWindow('moons.html', 0)">
+			Moons
+		</div>
+		<div class="header_menu_item" onclick="openWindow('for_children.html', 0)">
+			For children
+		</div>
+		<div class="header_menu_item" onclick="openWindow('news.html', 0)">
+			News
+		</div>
+	</div>
+	<hr color = "#f0f0f0" style="margin: 0">
+
+	<div id = "main_block">
+		<div id = "planets">
+			<img class = "planet" src="images/ch_sun.png">
+			<img class = "planet" src="images/ch_mercury.png">
+			<img class = "planet" src="images/ch_venus.png" >
+			<img class = "planet" src="images/ch_earth.png" >
+			<img class = "planet" src="images/ch_mars.png">
+			<img class = "planet" src="images/ch_jupiter.png">
+			<img class = "planet" src="images/ch_saturn.png">
+			<img class = "planet" src="images/ch_uranus.png">
+			<img class = "planet" src="images/ch_neptune.png">
+		</div>
+		<div id = "alien">
+			<img id = "arrow-b" class="arrow" src="images/tripple_arrow.png" onclick="go(0)">
+			<img id = "ufo" class = "animationUfo" src="images/ufo.png" width = "150">
+			<img id = "arrow-h" class="arrow" src="images/tripple_arrow.png" onclick="go(1)">
+		</div>
+		<div id = "text">
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		document.getElementById("text").innerText = planets_info[curIdPlanet];
+	</script>
+</body>

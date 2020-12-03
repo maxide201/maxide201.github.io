@@ -1,0 +1,224 @@
+<head>
+	<title>Solar system</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="font/font.css">
+	<link rel="stylesheet" type="text/css" href="styles/index.css">
+	<script type="text/javascript" src = "scripts/index.js"></script>
+</head>
+<body>
+	<a id="upbutton">
+   		<img src="images/up.png" onclick="go('header_menu')">
+	</a>
+
+	<div id="header_menu">
+		<div class="header_menu_item" onclick="openWindow('index.html', 0)">
+			Home
+		</div>
+		<div class="header_menu_item" onclick="openWindow('moons.html', 0)">
+			Moons
+		</div>
+		<div class="header_menu_item" onclick="openWindow('for_children.html', 0)">
+			For children
+		</div>
+		<div class="header_menu_item" onclick="openWindow('news.html', 0)">
+			News
+		</div>
+	</div>
+	<hr color = "#f0f0f0" style="margin: 0">
+	<div id = "top">
+		<h1>SOLAR SYSTEM</h1>
+		<img id="info" src="images/info.png" height="5%" width = "5%" onclick="infoClicked()">
+	</div>
+	<hr color = "#f0f0f0">
+	<div class = "open" id="SolarSystemDecription">
+		<p>The Solar System is the gravitationally bound system of the Sun and the objects that orbit it, either directly or indirectly. Of the objects that orbit the Sun directly, the largest are the eight planets, with the remainder being smaller objects, the dwarf planets and small Solar System bodies. Of the objects that orbit the Sun indirectly—the moons—two are larger than the smallest planet, Mercury.</p>
+
+		<p>The Solar System formed 4.6 billion years ago from the gravitational collapse of a giant interstellar molecular cloud. The vast majority of the system's mass is in the Sun, with the majority of the remaining mass contained in Jupiter. The four smaller inner planets, Mercury, Venus, Earth and Mars, are terrestrial planets, being primarily composed of rock and metal. The four outer planets are giant planets, being substantially more massive than the terrestrials. The two largest planets, Jupiter and Saturn, are gas giants, being composed mainly of hydrogen and helium; the two outermost planets, Uranus and Neptune, are ice giants, being composed mostly of substances with relatively high melting points compared with hydrogen and helium, called volatiles, such as water, ammonia and methane. All eight planets have almost circular orbits that lie within a nearly flat disc called the ecliptic.</p>
+
+		<p>The Solar System also contains smaller objects. The asteroid belt, which lies between the orbits of Mars and Jupiter, mostly contains objects composed, like the terrestrial planets, of rock and metal. Beyond Neptune's orbit lie the Kuiper belt and scattered disc, which are populations of trans-Neptunian objects composed mostly of ices, and beyond them a newly discovered population of sednoids. Within these populations, some objects are large enough to have rounded under their own gravity, though there is considerable debate as to how many there will prove to be. Such objects are categorized as dwarf planets. The only certain dwarf planet is Pluto, with another trans-Neptunian object, Eris, expected to be, and the asteroid Ceres at least close to being a dwarf planet. In addition to these two regions, various other small-body populations, including comets, centaurs and interplanetary dust clouds, freely travel between regions. Six of the planets, the six largest possible dwarf planets, and many of the smaller bodies are orbited by natural satellites, usually termed "moons" after the Moon. Each of the outer planets is encircled by planetary rings of dust and other small objects.</p>
+	</div>
+	<div class = "menu">
+		<img class = "menu_item" height ="5%" width="8%" onclick="go('sun')" src="images/mp_sun.png">
+		<img class = "menu_item" height ="5%" width="8%" onclick="go('mercury')" src="images/mp_mercury.png">
+		<img class = "menu_item" height ="5%" width="8%" onclick="go('venus')" src="images/mp_venus.png">
+		<img class = "menu_item" height ="5%" width="8%" onclick="go('earth')" src="images/mp_earth.png">
+		<img class = "menu_item" height ="5%" width="8%" onclick="go('mars')" src="images/mp_mars.png">
+		<img class = "menu_item" height ="5%" width="8%" onclick="go('jupiter')" src="images/mp_jupiter.png">
+		<img class = "menu_item" height ="8%" width="11%" onclick="go('saturn')" src="images/mp_saturn.png">
+		<img class = "menu_item" height ="8%" width="11%" onclick="go('uranus')" src="images/mp_uranus.png">
+		<img class = "menu_item" height ="5%" width="8%" onclick="go('neptune')" src="images/mp_neptune.png">
+	</div>
+
+	<div id = "quote">
+		<b>We go to learn about our solar system, to search for life, and to understand what happened to Mars so we avoid it ourselves.</b>
+		<br>
+		— Rick Tumlinson
+	
+	</div>
+
+	<div class = "block" id ="sun" onclick="openWindow('Planet.html?id=0')">
+		<img class = "image" src="images/mp_sun.png">
+		<div>
+			<h2>Sun</h2>
+			<hr noshade color = "#f0f0f0" size = "4">
+			<ul type="disck">
+				<li><b>Weight:</b> 1.99*10<sup><small>30</small></sup>kg.</li><br>
+				<li><b>Diameter:</b> 1.392.000 km.</li><br>	
+				<li><b>Surface temperature:</b> 5 800 K.</li><br>
+				<li><b>Distance from the center of the Galaxy:</b> 25.000 light years.</li><br>
+				<li><b>Orbital period around the center of the Galaxy:</b> 200 million years.</li><br>
+				<li><b>The speed of movement around the center of the Galaxy:</b> 230 km/s.</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class = "block" id="mercury" onclick="openWindow('Planet.html?id=1')">
+		<img class = "image" src="images/mp_mercury.png">
+		<div>
+			<h2>Mercury</h2>
+			<hr noshade color = "#f0f0f0" size = "4">
+			<ul type="disck">
+				<li><b>The period of revolution around the Sun:</b> 87.97 days.</li><br>
+				<li><b>Diameter at the equator:</b> 4878 km.</li><br>
+				<li><b>Rotation period (rotation around the axis):</b> 58 days.</li><br>	
+				<li><b>Surface temperature:</b> 350 during the day and -170 at night.</li><br>
+				<li><b>Atmosphere:</b> very thin, helium.</li><br>
+				<li><b>How many satellites:</b> 0.</li><br>
+				<li><b>The main satellites of the planet:</b> 0.</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class = "block" id="venus" onclick="openWindow('Planet.html?id=2')">
+		<img class = "image" src="images/mp_venus.png">
+		<div>
+			<h2>Venus</h2>
+			<hr noshade color = "#f0f0f0" size = "4">
+			<ul type="disck">
+				<li><b>The period of revolution around the Sun:</b> 224.7 days.</li><br>
+				<li><b>Diameter at the equator:</b> 12104 km.</li><br>
+				<li><b>Rotation period (rotation around the axis):</b> 243 days.</li><br>	
+				<li><b>Surface temperature:</b> 480 degrees (average).</li><br>
+				<li><b>Atmosphere:</b> dense, mainly carbon dioxide.</li><br>
+				<li><b>How many satellites:</b> 0.</li><br>
+				<li><b>The main satellites of the planet:</b> 0.</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class = "block" id="earth" onclick="openWindow('Planet.html?id=3')">
+		<img class = "image" src="images/mp_earth.png">
+		<div>
+			<h2>Earth</h2>
+			<hr noshade color = "#f0f0f0" size = "4">
+			<ul type="disck">
+				<li><b>The period of revolution around the Sun:</b> 365.3 days</li><br>
+				<li><b>Diameter at the equator:</b> 12756 km.</li><br>
+				<li><b>Rotation period (rotation around the axis):</b> 23 hours 56 minutes.</li><br>	
+				<li><b>Surface temperature:</b> 22 degrees (average).</li><br>
+				<li><b>Atmosphere:</b> very thin, helium.</li><br>
+				<li><b>How many satellites:</b> 0.</li><br>
+				<li><b>The main satellites of the planet:</b> 0.</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class = "block" id="mars" onclick="openWindow('Planet.html?id=4')">
+		<img class = "image" src="images/mp_mars.png">
+		<div>
+			<h2>Mars</h2>
+			<hr noshade color = "#f0f0f0" size = "4">
+			<ul type="disck">
+				<li><b>The period of revolution around the Sun:</b> 687 days</li><br>
+				<li><b>Diameter at the equator:</b> 6794 km.</li><br>
+				<li><b>Rotation period (rotation around the axis):</b> 24 hours 37 minutes.</li><br>	
+				<li><b>Surface temperature:</b> –23 degrees (average).</li><br>
+				<li><b>Atmosphere:</b> rarefied, mainly carbon dioxide.</li><br>
+				<li><b>How many satellites:</b> 2.</li><br>
+				<li><b>The main satellites of the planet:</b> Phobos, Deimos.</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class = "block" id="jupiter" onclick="openWindow('Planet.html?id=5')">
+		<img class = "image" src="images/mp_jupiter.png">
+		<div>
+			<h2>Jupiter</h2>
+			<hr noshade color = "#f0f0f0" size = "4">
+			<ul type="disck">
+				<li><b>The period of revolution around the Sun:</b> 11 years 314 days</li><br>
+				<li><b>Diameter at the equator:</b> 143884 km.</li><br>
+				<li><b>Rotation period (rotation around the axis):</b> 9 hours 55 minutes.</li><br>	
+				<li><b>Surface temperature:</b> -150 degrees (average).</li><br>
+				<li><b>Atmosphere:</b> Mainly hydrogen and helium.</li><br>
+				<li><b>How many satellites:</b> 16 (+ rings).</li><br>
+				<li><b>The main satellites of the planet:</b> Io, Europa, Ganymede, Callisto.</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class = "block" id="saturn" onclick="openWindow('Planet.html?id=6')">
+		<img class = "image" src="images/mp_saturn.png">
+		<div>
+			<h2>Saturn</h2>
+			<hr noshade color = "#f0f0f0" size = "4">
+			<ul type="disck">
+				<li><b>The period of revolution around the Sun:</b> 29 years 168 days</li><br>
+				<li><b>Diameter at the equator:</b> 120,536 km.</li><br>
+				<li><b>Rotation period (rotation around the axis):</b> 10 hours 14 minutes.</li><br>	
+				<li><b>Surface temperature:</b> -180 degrees (average).</li><br>
+				<li><b>Atmosphere:</b> Mainly hydrogen and helium.</li><br>
+				<li><b>How many satellites:</b> 18 (+ rings).</li><br>
+				<li><b>The main satellites of the planet:</b> Titan.</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class = "block" id="uranus" onclick="openWindow('Planet.html?id=7')">
+		<img class = "image" src="images/mp_uranus.png">
+		<div>
+			<h2>Uranus</h2>
+			<hr noshade color = "#f0f0f0" size = "4">
+			<ul type="disck">
+				<li><b>The period of revolution around the Sun:</b> 84 years 4 days.</li><br>
+				<li><b>Diameter at the equator:</b> 51,118 km.</li><br>
+				<li><b>Rotation period (rotation around the axis):</b> 17 hours 14 minutes.</li><br>	
+				<li><b>Surface temperature:</b> –214 degrees (average).</li><br>
+				<li><b>Atmosphere:</b> Mainly hydrogen and helium.</li><br>
+				<li><b>How many satellites:</b> 15 (+ rings).</li><br>
+				<li><b>The main satellites of the planet:</b> Titania, Oberon.</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class = "block" id="neptune" onclick="openWindow('Planet.html?id=8')">
+		<img class = "image" src="images/mp_neptune.png">
+		<div>
+			<h2>Neptune</h2>
+			<hr noshade color = "#f0f0f0" size = "4">
+			<ul type="disck">
+				<li><b>The period of revolution around the Sun:</b> 164 years 292 days.</li><br>
+				<li><b>Diameter at the equator:</b> 50538 km.</li><br>
+				<li><b>Rotation period (rotation around the axis):</b> 16 hours 7 minutes.</li><br>	
+				<li><b>Surface temperature:</b> –220 degrees (average).</li><br>
+				<li><b>Atmosphere:</b> Mainly hydrogen and helium.</li><br>
+				<li><b>How many satellites:</b> 8.</li><br>
+				<li><b>The main satellites of the planet:</b> Triton.</li>
+			</ul>
+		</div>
+	</div>	
+
+	<hr id = "footer_border" color = "#f0f0f0">
+	<div id="footer">
+		<div id = "copyright">
+				©Soluyanov M.A., 2020
+		</div>
+		<ul id = "footer-ul">
+			<li class="footer-li"><b>Contacts:</b></li>
+			<li class="footer-li">tel: <a href="tel:+7(800)-555-35-35">+7(800)-555-35-35</a></li>
+			<li class="footer-li">instagram: <a href="https://www.instagram.com/maxide201/">@maxide201</a></li>
+			<li class="footer-li">vk: <a href = "https://vk.com/maxide201">https://vk.com/maxide201</a></li>
+		</ul>
+</div>
+</body>
