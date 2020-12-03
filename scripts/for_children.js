@@ -53,7 +53,7 @@ window.addEventListener("touchmove", preventMotion, false);
 
 function preventMotion(event)
 {
-    window.scrollTo(0, window.pageYOffset || document.documentElement.scrollTop);
+    window.scrollTo({left: 0});
     event.preventDefault();
 	event.stopPropagation();
 }
