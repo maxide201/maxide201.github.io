@@ -1,76 +1,3 @@
-html{
-  scroll-behavior: smooth;
-}
-body{
-  font-family: "Roboto";
-  color: #f0f0f0;
-}
-a:link {
-    color: #f0f0f0; 
-}
-a:visited { 
-    color: #f0f0f0; 
-}
-a:active {
-    color: #f0f0f0;
-}  
-#header_menu{
-  display: flex;
-  padding-bottom: 0;
-}
-.header_menu_item{
-  display: block;
-  margin: 3px;
-  padding: 10px;
-  width: 25%;
-  border-top: 2px solid #f0f0f0;
-  font-size: 24px;
-  text-align: center;
-
-  transform: perspective(1px) translateZ(0);
-  overflow: hidden;
-  transition-duration: 0.3s;
-  transition-property: color, background-color;
-}
-.header_menu_item:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #ffffff;
-  -webkit-transform: scaleY(0);
-  transform: scaleY(0);
-  -webkit-transform-origin: 50% 0;
-  transform-origin: 50% 0;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.header_menu_item:hover, .header_menu_item:focus, .header_menu_item:active {
-  color: black;
-}
-.header_menu_item:hover:before, .header_menu_item:focus:before, .header_menu_item:active:before {
-  -webkit-transform: scaleY(1);
-  transform: scaleY(1);
-}
-
-#top{
-  padding: 10px;
-  font-size: 30px;
-  display: flex;
-  letter-spacing: 15px;
-  justify-content: center;
-}
-
-h1{
-  text-align: center;
-}
 h2, h3{
   margin-left: 2%;
 }
@@ -122,46 +49,9 @@ p{
   margin-right: auto
 }
 
-#footer{
-  background: black;
-  z-index: 1000;
-  display: inline;
-}
-#footer-ul{
-  list-style-type: none;
-}
-.footer-li{
-  text-align: left;
-  margin-bottom: 0%;
-}
-#copyright{
-  float: right;
-}
-
-
-#upbutton {
-  bottom: 30px;
-  left: 30px;
-  cursor: pointer;
-  display: none;
-  position: fixed;
-  z-index: 998;
-}
 
 @media (max-width: 992px) {
-  #top{
-    font-size: 40px;
-  }
-  .header_menu_item{
-    padding-top: 5%;
-    padding-bottom: 5%;
-    font-size: 45px;
-  }
-  
   #footer{
     font-size:35px;
-  }
-  #copyright{
-    font-size: 30px;
   }
 }
