@@ -2,8 +2,10 @@
 	<title>For children</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="font/font.css">
+	<link rel="stylesheet" type="text/css" href="styles/general.css">
 	<link rel="stylesheet" type="text/css" href="styles/for_children.css">
 	<script type="text/javascript" src = "scripts/json/ch_planets_json.js"></script>
+	<script type="text/javascript" src = "scripts/general.js"></script>
 	<script type="text/javascript" src = "scripts/for_children.js"></script>
 </head>
 <body>
@@ -36,14 +38,25 @@
 			<img class = "planet" src="images/ch_neptune.png">
 		</div>
 		<div id = "alien">
-			<img id = "arrow-b" class="arrow" src="images/tripple_arrow.png" onclick="go(0)">
+			<img id = "arrow-b" class="arrow" src="images/tripple_arrow.png" onclick="move(0)">
 			<img id = "ufo" class = "animationUfo" src="images/ufo.png" width = "150">
-			<img id = "arrow-h" class="arrow" src="images/tripple_arrow.png" onclick="go(1)">
+			<img id = "arrow-h" class="arrow" src="images/tripple_arrow.png" onclick="move(1)">
 		</div>
 		<div id = "text">
 		</div>
 	</div>
-
+	<hr id = "footer_border" color = "#f0f0f0">
+	<div id="footer">
+		<div id = "copyright">
+				©Soluyanov M.A., 2020
+		</div>
+		<ul id = "footer-ul">
+			<li class="footer-li"><b>Contacts:</b></li>
+			<li class="footer-li">tel: <a href="tel:+7(800)-555-35-35">+7(800)-555-35-35</a></li>
+			<li class="footer-li">instagram: <a href="https://www.instagram.com/maxide201/">@maxide201</a></li>
+			<li class="footer-li">vk: <a href = "https://vk.com/maxide201">https://vk.com/maxide201</a></li>
+		</ul>
+	</div>
 	<script type="text/javascript">
 		document.getElementById("text").innerText = planets_info[curIdPlanet];
 	</script>
